@@ -1,0 +1,61 @@
+@import '../../styles/variaveis';
+
+.containerSectionInitial {
+    display: flex;
+    width: 100%;
+    background-color: $purple-bg;
+    padding: $padding-desktop;
+    border-bottom: 5px solid $green;
+
+    .textSectionInitial {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+
+        h2 {
+            font-weight: 700;
+            font-size: 36px;
+            color: $button-bg;
+            max-width: 500px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            max-width: 450px;
+            color: $light-purple;
+            margin-top: -5px;
+        }
+
+        h3 {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 18px;
+            color: $button-bg;
+
+            img{
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .imgSectionInitial{
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+@media(max-width: 900px){
+    .containerSectionInitial{
+        flex-direction: column;
+        padding: $padding-mobile;
+
+        .textSectionInitial{
+            width: 100%;
+        }
+    }
+}

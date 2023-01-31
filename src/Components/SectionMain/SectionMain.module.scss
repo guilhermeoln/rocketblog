@@ -1,0 +1,85 @@
+@import '../../styles/variaveis';
+
+
+
+.containerMain {
+    width: 100%;
+    display: flex;
+    padding: $padding-desktop;
+
+
+    .colMain {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+
+        h3 {
+            margin-top: -5px;
+            font-weight: 700;
+            font-size: 24px;
+            color: $purple-bg;
+        }
+
+        .textDescription {
+            margin-top: -10px;
+        }
+
+
+        p {
+            margin-top: 2px;
+        }
+
+    }
+
+    .colMainTwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 100px;
+
+        .postColTwo {
+            border-bottom: 1px solid #ccc;
+
+
+            p {
+                margin-top: -2px;
+            }
+        }
+
+        h3 {
+            margin-top: -5px;
+            font-weight: 700;
+            font-size: 24px;
+            color: $purple-bg;
+        }
+
+        p {
+            margin-top: 2px;
+        }
+    }
+}
+
+
+@media(max-width: 900px) {
+    .containerMain {
+        flex-direction: column;
+        padding: $padding-mobile;
+
+        .colMain{
+
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .colMainTwo{
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+}

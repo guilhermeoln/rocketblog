@@ -1,0 +1,45 @@
+@import '../../styles/variaveis';
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $purple-bg;
+    padding: $padding-desktop;
+
+
+    input{
+        border: none;
+        background-color: $dark-bg;
+        border-radius: 4px;
+        padding: 10px;
+        color: white;
+    }
+
+    nav {
+        display: flex;
+
+        h3 {
+            margin-left: 20px;
+            font-weight: 400;
+            font-size: 18px;
+            align-items: flex-end;
+            color: white;
+            cursor: pointer;
+        }
+
+        .textSelected{
+            border-left: 3px solid $green;
+        }
+    }
+
+}
+
+@media(max-width: 900px){
+    .header{
+        flex-direction: column;
+        padding: $padding-mobile;
+    }
+}

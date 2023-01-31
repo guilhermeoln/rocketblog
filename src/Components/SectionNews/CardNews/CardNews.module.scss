@@ -1,0 +1,14 @@
+@import '../../../styles/variaveis';
+
+
+.containerCard {
+    h2 {
+        font-weight: 700;
+        font-size: 24px;
+        color: $purple-bg;
+    }
+
+    img{
+        width: 100%;
+    }
+}

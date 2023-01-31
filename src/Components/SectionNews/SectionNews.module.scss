@@ -1,0 +1,18 @@
+@import '../../styles/variaveis';
+
+
+.containerNews{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+    width: 100%;
+    padding: $padding-desktop;
+}
+
+
+@media(max-width: 900px){
+    .containerNews{
+        grid-template-columns: 1fr;
+        padding: $padding-mobile;
+    }
+}
